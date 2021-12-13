@@ -1,9 +1,9 @@
 import React from 'react';
 import { ThankYouPage } from './ThankYouPage';
-import gallery1 from '../../../assets/img/galleryMock/gallery1.png';
-import gallery2 from '../../../assets/img/galleryMock/gallery2.png';
-import gallery3 from '../../../assets/img/galleryMock/gallery3.png';
-import gallery4 from '../../../assets/img/galleryMock/gallery4.png';
+import gallery1 from '../../assets/img/galleryMock/gallery1.png';
+import gallery2 from '../../assets/img/galleryMock/gallery2.png';
+import gallery3 from '../../assets/img/galleryMock/gallery3.png';
+import gallery4 from '../../assets/img/galleryMock/gallery4.png';
 
 const Test = (props) => (
   <div>

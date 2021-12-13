@@ -13,7 +13,7 @@ import { COURIER_SERVICE_ID } from '../../../constants';
 //     title: 'Курьерская доставка',
 //     description: 'Отправим 23.04.2021. Стоимость - 0',
 //     deliveryMethodType: 'department',
-//     logoUrl: '/themes/redesign/assets/img/deliveriesLogos/pampik.svg',
+//     logoUrl: '/themes/redesign../../assets/img/deliveriesLogos/pampik.svg',
 //     deliveryDates: {
 //       firstDeliveryDate: 1623412800,
 //       dateList: {

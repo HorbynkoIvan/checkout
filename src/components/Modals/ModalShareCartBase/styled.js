@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as ChevronIcon } from '../../../assets/img/chevron.svg';
+import { ReactComponent as ChevronIcon } from '../../assets/img/chevron.svg';
 
 export const ModalShareCartBaseSC = styled.div`
   display: flex;

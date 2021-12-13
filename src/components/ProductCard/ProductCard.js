@@ -13,7 +13,7 @@ import {
   ProductCardItemSC,
   ScProductCard,
 } from './styled';
-import { desktop, mobile, tablet } from '../../assets/css/theme';
+import { desktop, mobile, tablet } from '../../theme/theme';
 import { CountSpinner } from '../CountSpinner/CountSpinner';
 import { AddPampiksBlock } from '../AddPampiksBlock/AddPampiksBlock';
 import { PriceBlock } from '../PriceBlock/PriceBlock';

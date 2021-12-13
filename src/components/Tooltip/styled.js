@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { ReactComponent as QuestionIcon } from '../../assets/img/question.svg';
-import { device } from '../../assets/css/theme';
+import { device } from '../../theme/theme';
 
 export const TooltipStyled = styled.div`
   position: relative;

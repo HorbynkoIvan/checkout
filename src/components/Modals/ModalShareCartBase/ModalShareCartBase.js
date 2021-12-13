@@ -7,10 +7,10 @@ import { Button } from '../../Buttons/Button/Button';
 import { ModalShareCartBaseSC, ChevronIconStyled } from './styled';
 import { ModalBaseAction } from '../ModalBaseAction/ModalBaseAction';
 import { ButtonAsLink } from '../../Buttons/ButtonAsLink/ButtonAsLink';
-import { ReactComponent as LinkIcon } from '../../../assets/img/social/link.svg';
-import { ReactComponent as ViberIcon } from '../../../assets/img/social/share-viber.svg';
-import { ReactComponent as TelegramIcon } from '../../../assets/img/social/share-telegram.svg';
-import { ReactComponent as EmailIcon } from '../../../assets/img/social/share-email.svg';
+import { ReactComponent as LinkIcon } from '../../assets/img/social/link.svg';
+import { ReactComponent as ViberIcon } from '../../assets/img/social/share-viber.svg';
+import { ReactComponent as TelegramIcon } from '../../assets/img/social/share-telegram.svg';
+import { ReactComponent as EmailIcon } from '../../assets/img/social/share-email.svg';
 
 import { SuccessBlock } from '../../SucessBlock/SuccessBlock';
 

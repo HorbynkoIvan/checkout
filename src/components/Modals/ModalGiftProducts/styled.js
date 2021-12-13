@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro';
 
 import { css } from 'styled-components';
-import { ReactComponent as CheckboxArrowIcon } from '../../../assets/img/checkbox-arrow.svg';
+import { ReactComponent as CheckboxArrowIcon } from '../../assets/img/checkbox-arrow.svg';
 
 export const ModalGiftProductsItemSC = styled.div`
   position: relative;

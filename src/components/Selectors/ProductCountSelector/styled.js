@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import Select from 'react-select';
-import chevron from '../../../assets/img/chevron_select.svg';
+import chevron from '../../assets/img/chevron_select.svg';
 
 export const ProductCountSelectorStyled = styled.div`
   width: 156px;

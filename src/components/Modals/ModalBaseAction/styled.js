@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
 import { css } from 'styled-components';
-import { device } from '../../../assets/css/theme';
+import { device } from '../../theme/theme';
 
 const normalizeCSSSize = (size) =>
   Number.isInteger(size) ? `${size}px` : size;

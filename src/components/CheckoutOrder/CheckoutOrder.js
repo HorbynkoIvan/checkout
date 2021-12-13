@@ -10,7 +10,7 @@ import ButtonAsLink from '../Buttons/ButtonAsLink';
 import { TitleSub } from '../Title';
 import { ImagesGallery } from '../ImagesGallery';
 import CheckoutTotalBlock from '../CheckoutTotalBlock';
-import { tabletDesktop } from '../../assets/css/theme';
+import { tabletDesktop } from '../../theme/theme';
 import { CheckoutContext } from '../../context';
 import { validationCheckout } from '../../validation/validationCheckout';
 import { ServiceCart } from '../../services/ServiceCart';

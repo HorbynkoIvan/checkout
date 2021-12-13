@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { device } from '../../../assets/css/theme';
+import { device } from '../../theme/theme';
 
 export const CheckoutPageSC = styled.div`
   max-width: 736px;

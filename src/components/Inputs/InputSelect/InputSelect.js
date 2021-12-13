@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { array } from 'prop-types';
 import { ScInputSelect } from './styled';
 
-import { ReactComponent as ChevronIcon } from '../../../assets/img/chevron.svg';
+import { ReactComponent as ChevronIcon } from '../../assets/img/chevron.svg';
 
 export const InputSelect = ({ data }) => {
   const initState = {

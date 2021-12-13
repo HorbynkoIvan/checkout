@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { theme } from '../../assets/css/theme';
+import { theme } from '../../theme/theme';
 
 export const DeliveryDepartmentStyled = styled.div`
   .title_inner {

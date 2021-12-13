@@ -8,10 +8,10 @@ import {
   ModalBodyStyled,
   ChevronIconStyled,
 } from './styled';
-import { ReactComponent as LinkIcon } from '../../../assets/img/social/link.svg';
-import { ReactComponent as ViberIcon } from '../../../assets/img/social/share-viber.svg';
-import { ReactComponent as TelegramIcon } from '../../../assets/img/social/share-telegram.svg';
-import { ReactComponent as EmailIcon } from '../../../assets/img/social/share-email.svg';
+import { ReactComponent as LinkIcon } from '../../assets/img/social/link.svg';
+import { ReactComponent as ViberIcon } from '../../assets/img/social/share-viber.svg';
+import { ReactComponent as TelegramIcon } from '../../assets/img/social/share-telegram.svg';
+import { ReactComponent as EmailIcon } from '../../assets/img/social/share-email.svg';
 import ButtonAsLink from '../../Buttons/ButtonAsLink';
 import { Input } from '../../Inputs/Input/Input';
 import Button from '../../Buttons/Button';

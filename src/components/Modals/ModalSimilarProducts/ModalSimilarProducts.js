@@ -15,7 +15,7 @@ import { Button } from '../../Buttons/Button/Button';
 import { Link } from '../../Link/Link';
 import { PriceBlock } from '../../PriceBlock/PriceBlock';
 import { ModalBase } from '../ModalBase/ModalBase';
-import { desktop, mobile, tablet } from '../../../assets/css/theme';
+import { desktop, mobile, tablet } from '../../theme/theme';
 import { ServiceCart } from '../../../services/ServiceCart';
 import { CartContext } from '../../../context';
 

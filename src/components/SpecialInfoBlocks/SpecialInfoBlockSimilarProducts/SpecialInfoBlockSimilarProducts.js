@@ -8,7 +8,7 @@ import {
   SpecialInfoBlockSimilarProductsModalTitleSC,
 } from './styled';
 import { ButtonAsLink } from '../../Buttons/ButtonAsLink/ButtonAsLink';
-import { ReactComponent as ChevronIcon } from '../../../assets/img/chevron.svg';
+import { ReactComponent as ChevronIcon } from '../../assets/img/chevron.svg';
 
 import { ModalSimilarProducts } from '../../Modals/ModalSimilarProducts/ModalSimilarProducts';
 import { SpecialInfoBlockBase } from '../SpecialInfoBlockBase/SpecialInfoBlockBase';

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import showPassword from '../../../assets/img/show_pass.svg';
-import hidePassword from '../../../assets/img/hide_pass.svg';
+import showPassword from '../../assets/img/show_pass.svg';
+import hidePassword from '../../assets/img/hide_pass.svg';
 
 export const InputBlockStyled = styled.div`
   .row {

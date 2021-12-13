@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
 import { ReactComponent as ResizerIcon } from '../../assets/img/resizer.svg';
-import { device } from '../../assets/css/theme';
+import { device } from '../../theme/theme';
 
 export const LabelStyled = styled.div`
   display: flex;

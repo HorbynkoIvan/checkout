@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import chevron, {
   ReactComponent as ChevronIcon,
-} from '../../../assets/img/chevron_select.svg';
+} from '../../assets/img/chevron_select.svg';
 
-import { device, theme } from '../../../assets/css/theme';
+import { device, theme } from '../../theme/theme';
 
 export const DatepickerSelectorStyled = styled.div`
   margin-right: 16px;

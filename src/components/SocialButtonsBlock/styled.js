@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { device } from '../../assets/css/theme';
+import { device } from '../../theme/theme';
 
 export const SocialButtonsBlockStyled = styled.div`
   width: 296px;

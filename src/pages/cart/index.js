@@ -1,11 +1,11 @@
 import React, { useContext, useReducer } from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
-import { theme } from '../../assets/css/theme';
+import { theme } from '../../theme/theme';
 
 import '../../locales/i18next';
 
-import { GlobalStyle } from '../../assets/css/GlobalStyle';
+import { GlobalStyle } from '/assets/css/GlobalStyle';
 import { Cart } from './src/Cart';
 import { cartReducer } from '../../state/cart/cartReducer';
 import { initialStateCart } from '../../state/cart/initialState';

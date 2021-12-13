@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { device } from '../../assets/css/theme';
+import { device } from '../../theme/theme';
 
 export const FinishBlockSC = styled.div`
   border: 1px solid #e2dfd9;

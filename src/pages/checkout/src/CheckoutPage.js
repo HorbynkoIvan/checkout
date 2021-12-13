@@ -8,7 +8,7 @@ import React, {
 import { useTranslation } from 'react-i18next';
 import { CheckoutContext } from '../../../context';
 import { ServiceCart } from '../../../services/ServiceCart';
-import { mobile } from '../../../assets/css/theme';
+import { mobile } from '../../theme/theme';
 import {
   CheckoutPageSC,
   RowSC,
@@ -26,7 +26,7 @@ import ButtonAsLink from '../../../components/Buttons/ButtonAsLink';
 import Comment from '../../../components/Comment';
 import { ImagesGallery } from '../../../components/ImagesGallery';
 import ContactsList from '../../../components/ContactsList';
-import { ReactComponent as CommentIcon } from '../../../assets/img/comment.svg';
+import { ReactComponent as CommentIcon } from '../../assets/img/comment.svg';
 
 import {
   initialStateCheckoutForm,
