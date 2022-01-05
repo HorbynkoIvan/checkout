@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { UserDataSC, RowSC, PhoneInfoSC, EmailInfoSC } from './styled';
-import { InputErrorSC } from '../../pages/checkout/src/styled';
+import { InputErrorSC } from '../../pages/checkout/styled';
 import InputMask from '../Inputs/InputMask';
 import Input from '../Inputs/Input';
 import ButtonAsLink from '../Buttons/ButtonAsLink';
@@ -55,6 +55,7 @@ export const UserData = () => {
     mask: '',
     phoneValue: '',
   });
+
   const onChangePhoneHandler = (event) => {
     const phoneValue = event.target.value.replace(/[^0-9]/g, '');
     const newState = {

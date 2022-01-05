@@ -15,7 +15,7 @@ import { ReactComponent as EmailIcon } from '../../assets/img/social/share-email
 import { SuccessBlock } from '../../SucessBlock/SuccessBlock';
 
 import useCopyToClipboard from '../../../hooks/useCopyToClipboard';
-import { InputErrorSC } from '../../../pages/checkout/src/styled';
+import { InputErrorSC } from '../../../pages/checkout/styled';
 import { validationCheckout } from '../../../validation/validationCheckout';
 
 const validation = (values) => {

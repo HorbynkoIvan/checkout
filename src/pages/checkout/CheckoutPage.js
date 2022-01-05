@@ -6,8 +6,8 @@ import React, {
   useCallback,
 } from 'react';
 import { useTranslation } from 'react-i18next';
-import { CheckoutContext } from '../../../context';
-import { ServiceCart } from '../../../services/ServiceCart';
+import { CheckoutContext } from '../../context';
+import { ServiceCart } from '../../services/ServiceCart';
 import { mobile } from '../../theme/theme';
 import {
   CheckoutPageSC,
@@ -16,39 +16,39 @@ import {
   CheckoutLeftSC,
   HrSC,
 } from './styled';
-import CheckoutOrder from '../../../components/CheckoutOrder';
-import { TitleBlock, TitleSub } from '../../../components/Title';
-import UserData from '../../../components/UserData';
-import DeliveryAddressesList from '../../../components/DeliveryAddressesList';
-import DeliveryMethod from '../../../components/DeliveryMethod';
-import PaymentsMethods from '../../../components/PaymentsMethods';
-import ButtonAsLink from '../../../components/Buttons/ButtonAsLink';
-import Comment from '../../../components/Comment';
-import { ImagesGallery } from '../../../components/ImagesGallery';
-import ContactsList from '../../../components/ContactsList';
+import CheckoutOrder from '../../components/CheckoutOrder';
+import { TitleBlock, TitleSub } from '../../components/Title';
+import UserData from '../../components/UserData';
+import DeliveryAddressesList from '../../components/DeliveryAddressesList';
+import DeliveryMethod from '../../components/DeliveryMethod';
+import PaymentsMethods from '../../components/PaymentsMethods';
+import ButtonAsLink from '../../components/Buttons/ButtonAsLink';
+import Comment from '../../components/Comment';
+import { ImagesGallery } from '../../components/ImagesGallery';
+import ContactsList from '../../components/ContactsList';
 import { ReactComponent as CommentIcon } from '../../assets/img/comment.svg';
 
 import {
   initialStateCheckoutForm,
   reducerCheckoutForm,
   initReducerCheckoutForm,
-} from '../../../state/checkout/reducerCheckoutForm';
+} from '../../state/checkout/reducerCheckoutForm';
 import {
   initialErrors,
   initReducerErrors,
   reducerErrorsForm,
-} from '../../../state/checkout/reducerErrorsForm';
+} from '../../state/checkout/reducerErrorsForm';
 import {
   reducerCheckoutData,
   initialStateCheckoutData,
   initReducerCheckoutData,
-} from '../../../state/checkout/reducerCheckout';
-import { ServiceCustomer } from '../../../services/ServiceCustomer';
-import { ServiceDict } from '../../../services/ServiceDict';
+} from '../../state/checkout/reducerCheckout';
+import { ServiceCustomer } from '../../services/ServiceCustomer';
+import { ServiceDict } from '../../services/ServiceDict';
 import { CheckoutLayout } from './CheckoutLayout';
-import { pageLangParamRedesign } from '../../../helpers/helpers';
-import ErrorBoundry from '../../../components/ErrorBoundry';
-import { SpecialInfoBlockOversizedCheckout } from '../../../components/SpecialInfoBlocks/SpecialInfoBlockOversizedCheckout/SpecialInfoBlockOversizedCheckout';
+import { pageLangParamRedesign } from '../../helpers/helpers';
+import ErrorBoundry from '../../components/ErrorBoundry';
+import { SpecialInfoBlockOversizedCheckout } from '../../components/SpecialInfoBlocks/SpecialInfoBlockOversizedCheckout/SpecialInfoBlockOversizedCheckout';
 
 export const CheckoutPage = () => {
   const { t } = useTranslation();

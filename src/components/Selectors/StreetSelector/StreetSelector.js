@@ -7,7 +7,7 @@ import { StreetSelectorStyled, SelectStyled } from './styled';
 import { TitleLabel } from '../../Title';
 import { CheckoutContext } from '../../../context';
 import { validationCheckout } from '../../../validation/validationCheckout';
-import { InputErrorSC } from '../../../pages/checkout/src/styled';
+import { InputErrorSC } from '../../../pages/checkout/styled';
 import { ServiceDict } from '../../../services/ServiceDict';
 import { setMaxLength } from '../../../helpers/helpers';
 import { Preloader } from '../../Preloader/Preloader';

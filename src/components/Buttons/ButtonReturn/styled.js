@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { ReactComponent as ChevronLeft } from '../../assets/img/chevronLeft.svg';
+import { ReactComponent as ChevronLeft } from '../../../assets/img/chevronLeft.svg';
 
 export const ButtonReturnStyled = styled.button`
   display: flex;

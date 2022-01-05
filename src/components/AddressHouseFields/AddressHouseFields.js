@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 
 import { useTranslation } from 'react-i18next';
 import { any, bool } from 'prop-types';
-import { InputErrorSC } from '../../pages/checkout/src/styled';
+import { InputErrorSC } from '../../pages/checkout/styled';
 import { RowSC } from './styled';
 import Input from '../Inputs/Input';
 import { CheckoutContext } from '../../context';

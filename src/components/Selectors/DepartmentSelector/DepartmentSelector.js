@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { any } from 'prop-types';
 import useDebounced from '../../../hooks/useDebounce';
 import { DepartmentSelectorStyled, SelectStyled } from './styled';
-import { InputErrorSC } from '../../../pages/checkout/src/styled';
+import { InputErrorSC } from '../../../pages/checkout/styled';
 import { TitleLabel } from '../../Title';
 import { CheckoutContext } from '../../../context';
 import { validationCheckout } from '../../../validation/validationCheckout';

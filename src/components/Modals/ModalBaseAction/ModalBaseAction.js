@@ -7,7 +7,7 @@ import {
   ModalBaseActionWrapperSC,
 } from './styled';
 
-import { ReactComponent as DeleteIcon } from '../../assets/img/delete-icon.svg';
+import { ReactComponent as DeleteIcon } from '../../../assets/img/delete-icon.svg';
 import { Portal } from '../../Portal/Portal';
 import ButtonReturn from '../../Buttons/ButtonReturn';
 

@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { TitleInner } from '../Title';
 import { DeliveryAddressStyled, RowSC } from './styled';
-import { InputErrorSC } from '../../pages/checkout/src/styled';
+import { InputErrorSC } from '../../pages/checkout/styled';
 import Input from '../Inputs/Input';
 import StreetSelector from '../Selectors/StreetSelector';
 import { CheckoutContext } from '../../context';

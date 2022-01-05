@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import Select from 'react-select';
-import chevron from '../../assets/img/chevron_select.svg';
-import { device } from '../../theme/theme';
+import chevron from '../../../assets/img/chevron_select.svg';
+import { device } from '../../../theme/theme';
 
 export const TimeSelectorStyled = styled.div`
   width: 156px;

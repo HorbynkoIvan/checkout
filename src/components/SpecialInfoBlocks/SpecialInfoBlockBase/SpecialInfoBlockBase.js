@@ -3,7 +3,7 @@ import { any, bool, func } from 'prop-types';
 import { ScSpecialInfoTop, SpecialInfoBlockBaseSC } from './styled';
 
 import { InfoLabel } from '../../InfoLabel/InfoLabel';
-import { ReactComponent as DeleteIcon } from '../../assets/img/delete-icon.svg';
+import { ReactComponent as DeleteIcon } from '../../../assets/img/delete-icon.svg';
 
 export const SpecialInfoBlockBase = ({
   children,
