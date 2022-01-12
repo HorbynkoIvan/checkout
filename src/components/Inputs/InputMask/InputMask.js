@@ -22,7 +22,7 @@ export const InputMask = ({
   placeholder,
   phoneValue,
   onChange,
-  onBlur,
+  onBlur, alwaysShowMask, onPaste
 }) => (
   <InputMaskBlockStyled>
     <div className="row">
@@ -31,12 +31,14 @@ export const InputMask = ({
     <InputMaskWrapStyled>
       {error && <InputErrorCrossStyled />}
       <InputMaskStyled
+          alwaysShowMask={alwaysShowMask}
         name={name}
         type={type}
         placeholder={placeholder}
         value={phoneValue}
         onChange={onChange}
         onBlur={onBlur}
+          onPaste={onPaste}
         mask={mask}
         maskChar={maskChar}
         error={error ? 1 : 0}

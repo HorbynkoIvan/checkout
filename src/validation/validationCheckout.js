@@ -8,7 +8,7 @@ export const validationCheckout = (values) => {
 
   if (values.phone === '') {
     errors.phone = { empty: true };
-  } else if (values.phone && values.phone.includes('_')) {
+  } else if (values.phone && values.phone.replace(/[^0-9]/g, '').length!==12) {
     errors.phone = { incorrectPhone: true };
   }
 
