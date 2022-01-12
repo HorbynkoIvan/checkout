@@ -14,20 +14,20 @@ export const CheckoutTotalBlock = ({ className }) => {
     <ScTotalBlock className={className}>
       <RowStyled>
         <span>{t('Сумма заказа')}</span>
-        <span>{`${totalPriceWithoutDelivery} грн`}</span>
+          {totalPriceWithoutDelivery && <span>{`${totalPriceWithoutDelivery} грн`}</span>}
       </RowStyled>
       <RowStyled>
         <span>{t('Доставка')}</span>
         {shippingAmount ? (
           <span>{`${shippingAmount} грн`}</span>
         ) : (
-          <span>{t('Бесплатно')}</span>
+            totalPrice && <span>{t('Бесплатно')}</span>
         )}
       </RowStyled>
       <HrStyled />
       <RowBoldStyled>
         <span>{t('Итого к оплате')}</span>
-        <span>{`${totalPrice} грн`}</span>
+          {totalPrice && <span>{`${totalPrice} грн`}</span>}
       </RowBoldStyled>
     </ScTotalBlock>
   );

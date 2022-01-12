@@ -5,6 +5,7 @@ export const initialStateCheckoutData = {
   deliveryMethodType: '',
   city: '',
   openedCheckoutModal: false,
+  isLoading: false
 };
 
 export const initReducerCheckoutData = (state) => ({ ...state });

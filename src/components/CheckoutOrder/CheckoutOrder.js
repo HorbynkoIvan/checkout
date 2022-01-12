@@ -16,6 +16,7 @@ import { validationCheckout } from '../../validation/validationCheckout';
 import { ServiceCart } from '../../services/ServiceCart';
 import { pageLangParamRedesign } from '../../helpers/helpers';
 import { Checkbox } from '../Checkbox/Checkbox';
+import {Preloader} from "../Preloader/Preloader";
 
 export const CheckoutOrder = () => {
   const { t } = useTranslation();
@@ -111,6 +112,8 @@ export const CheckoutOrder = () => {
 
   return (
     <CheckoutOrderStyled>
+      {checkoutData.isLoading && <Preloader />}
+
       {tabletDesktop && (
         <>
           <RowTitleStyled>

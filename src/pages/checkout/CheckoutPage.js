@@ -92,16 +92,21 @@ export const CheckoutPage = () => {
 
   useEffect(() => {
     (async () => {
-      try {
-        const { data } = await ServiceCart.getCart();
-        dispatchCheckoutData({ type: 'fetch', payload: data });
+      dispatchCheckoutData({ type: 'fetch', payload: {isLoading: true} });
+      setTimeout(async ()=>{
+        try {
+          const { data } = await ServiceCart.getCart();
+          dispatchCheckoutData({ type: 'fetch', payload: {...data} });
 
-        // if customer not null - user is Logged In
-        if (!data.customer) return;
-        setUserLoggedIn(true);
-      } catch (e) {
-        console.log(e);
-      }
+          // if customer not null - user is Logged In
+          if (!data.customer) return;
+          setUserLoggedIn(true);
+        } catch (e) {
+          console.log(e);
+        } finally {
+          dispatchCheckoutData({ type: 'fetch', payload: {isLoading: false } });
+        }
+      }, 3000)
     })();
   }, []);
 

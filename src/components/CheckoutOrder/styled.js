@@ -2,6 +2,7 @@ import styled from 'styled-components/macro';
 import { device } from '../../theme/theme';
 
 export const CheckoutOrderStyled = styled.div`
+  position: relative;
   max-width: 376px;
   border: 1px solid #e2dfd9;
   box-sizing: border-box;
