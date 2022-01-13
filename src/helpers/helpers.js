@@ -30,3 +30,9 @@ export function formatDate(date) {
 export function setMaxLength(query, maxLength) {
   return query.length <= maxLength ? query : query.substr(0, maxLength);
 }
+
+export const checkValidPhoneCode = (phone) => {
+  const phoneCodes = ['039', '050', '063', '066', '067', '068', '073', '091', '092', '093', '094', '095', '096', ' 097', '098', '099'];
+  const currentPhoneCode = phone.replace(/[^0-9]/g, '').slice(2, 5);
+  return phoneCodes.includes(currentPhoneCode)
+}
