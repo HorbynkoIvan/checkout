@@ -59,6 +59,7 @@ export const CheckoutPage = () => {
   const [userLoggedIn, setUserLoggedIn] = useState(false);
   const [contactsAPI, setContactsAPI] = useState([]);
   const [addressesAPI, setAddressesAPI] = useState([]);
+  const [isOpenModalWar, setIsOpenModalWar] = useState(false);
   const [checkoutData, dispatchCheckoutData] = useReducer(
     reducerCheckoutData,
     initialStateCheckoutData,
@@ -74,6 +75,9 @@ export const CheckoutPage = () => {
     initialErrors,
     initReducerErrors
   );
+  const modalWarClickHandler = () => {
+    setIsOpenModalWar(!isOpenModalWar);
+  };
 
   useEffect(() => {
     if (formData.cityId) {
@@ -263,8 +267,8 @@ export const CheckoutPage = () => {
     >
       <CheckoutLayout>
         <ModalWarDelivery
-            opened={true}
-            // closeModal={modalAuthClickHandler}
+            opened={isOpenModalWar}
+            closeModal={modalWarClickHandler}
         />
         <CheckoutPageSC>
           <TitleBlock>
@@ -300,7 +304,7 @@ export const CheckoutPage = () => {
               <HrSC />
               <TitleBlock>{t('Способ доставки')}</TitleBlock>
 
-              <SpecialInfoBlockWarDelivery/>
+              <SpecialInfoBlockWarDelivery onClick={modalWarClickHandler}/>
 
               {checkoutData.hasPreorderedProducts && (
                 <SpecialInfoBlockOversizedCheckout />

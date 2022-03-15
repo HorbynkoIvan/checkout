@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {device} from "../../../theme/theme";
 
 const normalizeCSSSize = (size) =>
   Number.isInteger(size) ? `${size}px` : size;
@@ -75,5 +76,10 @@ export const ModalStyled = styled.div`
       transform: rotate(-45deg);
       position: absolute;
     }
+  }
+
+  @media only screen and ${device.mobile} {
+    width: 100%;
+    max-width: 330px;
   }
 `;

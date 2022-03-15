@@ -30,7 +30,7 @@ Modal.propTypes = {
     children: oneOfType([node, arrayOf(node)]).isRequired,
     opened: bool.isRequired,
     closeModal: func.isRequired,
-    modalWidth: number.isRequired,
+    modalWidth: number,
     background: string,
     borderRadius: string
 };
