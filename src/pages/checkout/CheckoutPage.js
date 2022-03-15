@@ -49,6 +49,9 @@ import { CheckoutLayout } from './CheckoutLayout';
 import { pageLangParamRedesign } from '../../helpers/helpers';
 import ErrorBoundry from '../../components/ErrorBoundry';
 import { SpecialInfoBlockOversizedCheckout } from '../../components/SpecialInfoBlocks/SpecialInfoBlockOversizedCheckout/SpecialInfoBlockOversizedCheckout';
+import SpecialInfoBlockWarDelivery from '../../components/SpecialInfoBlocks/SpecialInfoBlockWarDelivery'
+
+import ModalWarDelivery from '../../components/Modals/ModalWarDelivery'
 
 export const CheckoutPage = () => {
   const { t } = useTranslation();
@@ -259,6 +262,10 @@ export const CheckoutPage = () => {
       value={{ ...formDataValue, checkoutData, userLoggedIn }}
     >
       <CheckoutLayout>
+        <ModalWarDelivery
+            opened={true}
+            // closeModal={modalAuthClickHandler}
+        />
         <CheckoutPageSC>
           <TitleBlock>
             {t('Оформление заказа')} <span>№{checkoutData.orderNumber}</span>
@@ -292,6 +299,8 @@ export const CheckoutPage = () => {
               )}
               <HrSC />
               <TitleBlock>{t('Способ доставки')}</TitleBlock>
+
+              <SpecialInfoBlockWarDelivery/>
 
               {checkoutData.hasPreorderedProducts && (
                 <SpecialInfoBlockOversizedCheckout />

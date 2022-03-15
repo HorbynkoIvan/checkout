@@ -32,9 +32,9 @@ export const ModalStyled = styled.div`
   padding: 50px 16px 16px;
   box-sizing: border-box;
   width: ${({ modalWidth }) => normalizeCSSSize(modalWidth)};
-  border-radius: 5px;
+  border-radius: ${({ borderRadius }) => borderRadius? borderRadius: '5px'};
   height: auto;
-  background: #ffffff;
+  background: ${({ background }) => background? background: '#ffffff'};
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   transform: translateY(-40px);
