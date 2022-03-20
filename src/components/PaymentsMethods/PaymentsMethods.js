@@ -60,7 +60,8 @@ export const PaymentsMethods = () => {
       );
 
       if (paymentMethodLoaded === undefined) {
-        return setChecked(checkoutData.paymentMethods[0].id);
+        setChecked(checkoutData.paymentMethods[0].id);
+        setFormData({ paymentMethod: paymentMethodLoaded[0].id });
       }
 
       if (paymentMethodLoaded.enabled) {

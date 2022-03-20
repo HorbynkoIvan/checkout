@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import {device} from "../../../theme/theme";
 
 const normalizeCSSSize = (size) =>
@@ -12,17 +12,22 @@ export const ModalOverlayStyled = styled.div`
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  z-index: 1;
+  z-index: 2;
   visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  overflow-y: scroll;
 
   &.is_visible {
     opacity: 1;
     visibility: visible;
     transition: opacity 0.3s 0s, visibility 0s 0s;
+  }
+  @media only screen and (max-width: 767px) {
+    align-items: flex-start;
+    padding: 25px 0 120px;
   }
 `;
 
@@ -81,5 +86,6 @@ export const ModalStyled = styled.div`
   @media only screen and ${device.mobile} {
     width: 100%;
     max-width: 330px;
+    transform: translateY(0);
   }
 `;

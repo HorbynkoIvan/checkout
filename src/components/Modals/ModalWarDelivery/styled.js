@@ -26,12 +26,10 @@ export const SCBlock = styled.div`{
   }
   
   ul{
-    //list-style-position: inside;
     padding: 0;
   }
 
   li {
-    //list-style-position: inside;
     list-style: none;
     padding-left: 20px;
     position: relative;
